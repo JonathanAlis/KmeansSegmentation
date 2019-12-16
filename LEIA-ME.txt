@@ -1,0 +1,41 @@
+LEIA-ME
+
+Projeto Demonstrativo 5
+Jonathan Alis S Lima
+Visão computacional
+UnB
+Flávio Vidal
+24/5/2015
+
+
+Arquivos desta pasta: 
+LEIA-ME: este arquivo, contém as instruções do conteúdo da pasta e de compilação
+
+O requisito 1 consiste dos arquivos:
+seg_clus_fruit: segmentacao por clusterizacao com centroides manuais da imagem fruit
+seg_clus_wine: segmentacao por clusterizacao com centroides manuais da imagem wine
+seg_clus_random_fruit: segmentacao por clusterizacao com centroides aleatorios da imagem fruit
+seg_clus_random_wine: segmentacao por clusterizacao com centroides aleatorios da imagem wine
+seg_lim_fruit: segmentacao por limiar da imagem fruit
+seg_lim_wine: segmentacao por limiar da imagem wine
+seg_reg_fruit: segmentacao por regioes da imagem fruit
+seg_reg_wine:segmentacao por regioes da imagem wine
+
+O requisito 2 consiste dos arquivos:
+compare_fruit: Apos a execução de todas as segmentações, ao executar esse programa faz a comparação objetiva dos métodos a partir do resultado da segmentação da imagem fruit
+compare_wine: Apos a execução de todas as segmentações, ao executar esse programa faz a comparação objetiva dos métodos a partir do resultado da segmentação da imagem wine
+
+build_all.sh: Arquivo utilizado para compilação.
+Jonathan_PD4.pdf: O relatório.
+
+Pastas:
+image-seg: contém os arquivos de imagens originais, fruit e wine.
+resultado_limiar: pasta que que estão/serão salvos os resultados da segmentação por limiarização.
+resultado_regioes: pasta que que estão/serão salvos os resultados da segmentação por regiões.
+resultado_limiar: pasta que que estão/serão salvos os resultados da segmentação por limiarização.
+clustering_random: pasta que que estão/serão salvos os resultados da segmentacao por clusterizacao com centroides aleatorios.
+clustering_chosen: pasta que que estão/serão salvos os resultados da segmentacao por clusterizacao com centroides escolhidos manualmente, baseado em regiões escolhidas pelo usuário.
+
+Instruções para compilação e execução:
+Abra um terminal nesta pasta e execute o comando: bash build_all.sh
+Para rodar os programas, digite o comando: ./nome_do_programa. Os que começam por 'seg' salvam o arquivo resultante na pasta correspondente.
